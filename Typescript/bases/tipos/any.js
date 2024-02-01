@@ -13,3 +13,4 @@
     console.log(avenger.toFixed(2));
     console.log(exist, power);
 })();
+//# sourceMappingURL=any.js.map

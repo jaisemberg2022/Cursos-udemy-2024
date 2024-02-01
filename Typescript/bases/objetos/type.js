@@ -7,3 +7,4 @@
     };
     console.log(flash);
 })();
+//# sourceMappingURL=type.js.map

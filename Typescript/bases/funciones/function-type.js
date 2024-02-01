@@ -13,3 +13,4 @@
     myFunction = saveTheWord;
     console.log(myFunction());
 })();
+//# sourceMappingURL=function-type.js.map

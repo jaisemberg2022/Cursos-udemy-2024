@@ -6,3 +6,4 @@
     hero[2] = true;
     console.log({ hero });
 })();
+//# sourceMappingURL=tuples.js.map

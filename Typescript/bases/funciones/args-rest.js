@@ -6,3 +6,4 @@
     const superman = fullNmae('clark', 'joseph', 'kent');
     console.log({ superman });
 })();
+//# sourceMappingURL=args-rest.js.map

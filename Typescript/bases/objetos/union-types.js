@@ -11,3 +11,4 @@
     };
     console.log(typeof myCustomVariable3);
 })();
+//# sourceMappingURL=union-types.js.map
