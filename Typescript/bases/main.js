@@ -256,6 +256,15 @@ var __rest = (this && this.__rest) || function (s, e) {
     console.log(typeof activateBatsignal);
 })();
 (() => {
+    //a diferencia de los types las interfaces si se pueden extender
+    let flash = {
+        name: 'barry allen',
+        age: 24,
+        powers: ['super velocidad', 'viajar en el tiempo']
+    };
+    console.log(flash);
+})();
+(() => {
     let flash = {
         name: 'barry allen',
         age: 24,
