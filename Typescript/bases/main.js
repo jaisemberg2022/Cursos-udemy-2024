@@ -104,6 +104,34 @@ var __rest = (this && this.__rest) || function (s, e) {
     getName();
 })();
 (() => {
+    class Mutante {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+        }
+    }
+    class Xmen extends Mutante {
+        salvarMundo() {
+            return 'mundo asalvo';
+        }
+    }
+    ;
+    class Vilian extends Mutante {
+        conquistar() {
+            return 'conquistado';
+        }
+    }
+    ;
+    let magneto = new Xmen('magneto', 'magnus');
+    let wolverin = new Vilian('wolverine', 'logan');
+    // console.log(wolverin.salvarMundo());
+    // console.log(magneto.conquistar());
+    const printName = (personaje) => {
+        console.log(personaje.realName);
+    };
+    printName(wolverin);
+})();
+(() => {
     class Avenger {
         static getAvAge() {
             return `${this.name}`;
