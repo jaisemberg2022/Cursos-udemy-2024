@@ -265,6 +265,21 @@ var __rest = (this && this.__rest) || function (s, e) {
     console.log(flash);
 })();
 (() => {
+    class Mutant {
+        // public name!: string;
+        // public realName!: string;
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+        }
+        mutantPower(id) {
+            return this.name;
+        }
+    }
+    const wolverine = new Mutant('wolverine', 'Logan');
+    console.log("------------------" + wolverine.name);
+})();
+(() => {
     const client = {
         name: 'juan',
         age: 23,
