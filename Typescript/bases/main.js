@@ -104,6 +104,17 @@ var __rest = (this && this.__rest) || function (s, e) {
     getName();
 })();
 (() => {
+    class Avenger {
+        constructor(name, team, realName) {
+            this.name = name;
+            this.team = team;
+            this.realName = realName;
+        }
+    }
+    const antMan = new Avenger('Antman', 'capitan');
+    console.log(antMan);
+})();
+(() => {
     const fullName = (firstName, lastName, upper = false) => {
         if (upper) {
             return `${firstName} , ${lastName || 'no last name'}`.toUpperCase();
