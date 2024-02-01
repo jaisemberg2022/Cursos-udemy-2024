@@ -45,6 +45,14 @@
     console.log(mystique);
 })();
 (() => {
+    const nomnbre = 'Fernando';
+    const getName = () => {
+        console.log('viejo nombre');
+    };
+    // getName = ()=>{console.log('Nuevo getName')};
+    getName();
+})();
+(() => {
     const fullName = (firstName, lastName, upper = false) => {
         if (upper) {
             return `${firstName} , ${lastName || 'no last name'}`.toUpperCase();
