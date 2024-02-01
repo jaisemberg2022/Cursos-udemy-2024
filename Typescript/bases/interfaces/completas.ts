@@ -3,7 +3,8 @@
     interface Client {
         name:string,
         age?:number,
-        address?:Address
+        address?:Address,
+        getFullAdrres (id:string): void,
     }
 
     interface Address{
@@ -19,6 +20,9 @@
             city:'Toronto',
             id:123,
             zip:'ottcawa'
+        },
+        getFullAdrres(id:string){
+            return this.address?.city;
         }
     }
 

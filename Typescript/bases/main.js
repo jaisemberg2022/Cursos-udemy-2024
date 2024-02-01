@@ -272,6 +272,10 @@ var __rest = (this && this.__rest) || function (s, e) {
             city: 'Toronto',
             id: 123,
             zip: 'ottcawa'
+        },
+        getFullAdrres(id) {
+            var _a;
+            return (_a = this.address) === null || _a === void 0 ? void 0 : _a.city;
         }
     };
 })();
