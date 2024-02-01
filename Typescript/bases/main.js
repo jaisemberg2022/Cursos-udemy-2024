@@ -179,6 +179,26 @@ var __rest = (this && this.__rest) || function (s, e) {
     // wolverine.getFullNameDesdeXmen();
 })();
 (() => {
+    class Apocalipssis {
+        constructor(name) {
+            this.name = name;
+        }
+        static llamarApocalipssis() {
+            if (!Apocalipssis.instancia) {
+                Apocalipssis.instancia = new Apocalipssis('soy apocalipsis');
+            }
+            return Apocalipssis.instancia;
+        }
+        changeName(newName) {
+            this.name = newName;
+        }
+    }
+    const apocalipssis1 = Apocalipssis.llamarApocalipssis();
+    const apocalipssis2 = Apocalipssis.llamarApocalipssis();
+    apocalipssis1.changeName('AAAA');
+    console.log(apocalipssis1, apocalipssis2);
+})();
+(() => {
     const fullName = (firstName, lastName, upper = false) => {
         if (upper) {
             return `${firstName} , ${lastName || 'no last name'}`.toUpperCase();
