@@ -265,6 +265,17 @@ var __rest = (this && this.__rest) || function (s, e) {
     console.log(flash);
 })();
 (() => {
+    const client = {
+        name: 'juan',
+        age: 23,
+        address: {
+            city: 'Toronto',
+            id: 123,
+            zip: 'ottcawa'
+        }
+    };
+})();
+(() => {
     let flash = {
         name: 'barry allen',
         age: 24,
