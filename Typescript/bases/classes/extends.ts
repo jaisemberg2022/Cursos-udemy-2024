@@ -10,6 +10,14 @@
         protected getFullName(){
             return `${this.name}  ${this.realName}`
         }
+
+        get fullName():string  {
+            return `${this.name} - ${this.realName }`
+        };
+
+        set fullname(name:string){
+            this.name = name;
+        } 
     }
 
     class Xmen extends Avenger{
@@ -28,6 +36,10 @@
 
     const wolverine = new Xmen('wolverine','Logan',true);
 
-    console.log(wolverine),
-    wolverine.getFullNameDesdeXmen();
+    //parametrizar el setter de la clase avengers
+    wolverine.fullname = 'fernando'
+    console.log(wolverine.fullName);
+    // wolverine.getFullNameDesdeXmen();
+
+
 })()

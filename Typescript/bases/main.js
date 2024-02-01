@@ -127,6 +127,13 @@ var __rest = (this && this.__rest) || function (s, e) {
         getFullName() {
             return `${this.name}  ${this.realName}`;
         }
+        get fullName() {
+            return `${this.name} - ${this.realName}`;
+        }
+        ;
+        set fullname(name) {
+            this.name = name;
+        }
     }
     class Xmen extends Avenger {
         constructor(name, realName, isMutant) {
@@ -138,8 +145,10 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     }
     const wolverine = new Xmen('wolverine', 'Logan', true);
-    console.log(wolverine),
-        wolverine.getFullNameDesdeXmen();
+    //parametrizar el setter de la clase avengers
+    wolverine.fullname = 'fernando';
+    console.log(wolverine.fullName);
+    // wolverine.getFullNameDesdeXmen();
 })();
 (() => {
     const fullName = (firstName, lastName, upper = false) => {
