@@ -10,51 +10,46 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-(() => {
-    // Objetos
-    const batimovil = {
-        carroceria: "Negra",
-        modelo: "6x6",
-        antibalas: true,
-        pasajeros: 4
+// Crear interfaces
+const conducirBatimovil = (auto) => {
+    auto.encender = true;
+    auto.velocidadMaxima = 100;
+    auto.acelerar = () => {
+        return "acelerar ya";
     };
-    const bumblebee = {
-        carroceria: "Amarillo con negro",
-        modelo: "4x2",
-        antibalas: true,
-        pasajeros: 4,
-        disparar() {
-            console.log("Disparando");
-        }
-    };
-    // Villanos debe de ser un arreglo de objetos personalizados
-    const villanos = [{
-            nombre: "Lex Luthor",
-            edad: 54,
-            mutante: false
-        }, {
-            nombre: "Erik Magnus Lehnsherr",
-            edad: 49,
-            mutante: true
-        }, {
-            nombre: "James Logan",
-            edad: undefined,
-            mutante: true
-        }];
-    const charles = {
-        poder: "psiquico",
-        estatura: 1.78
-    };
-    const apocalipsis = {
-        lider: true,
-        miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
-    };
-    // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-    let mystique;
-    mystique = charles;
-    mystique = apocalipsis;
-    console.log(mystique);
-})();
+};
+const batimovil = {
+    encender: false,
+    velocidadMaxima: 0,
+    acelerar() {
+        console.log("...... gogogo!!!");
+    },
+};
+const guason = {
+    reir: true,
+    comer: true,
+    llorar: false,
+};
+const reir = (guason) => {
+    if (guason.reir) {
+        console.log("JAJAJAJA");
+    }
+};
+const ciudadGotica = (ciudadanos) => {
+    return ciudadanos.length;
+};
+class Persona {
+    constructor(nombre, edad, sexo, estadoCivil, imprimirBio) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.estadoCivil = estadoCivil;
+        this.imprimirBio = imprimirBio;
+        this.imprimirBio = () => {
+            return 'app';
+        };
+    }
+}
 (() => {
     const avengers = {
         nick: 'Samueel L Jackson',
