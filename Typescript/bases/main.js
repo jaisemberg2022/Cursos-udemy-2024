@@ -118,6 +118,30 @@ var __rest = (this && this.__rest) || function (s, e) {
     console.log(Avenger.getAvAge());
 })();
 (() => {
+    class Avenger {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+            console.log('avenger llamado');
+        }
+        getFullName() {
+            return `${this.name}  ${this.realName}`;
+        }
+    }
+    class Xmen extends Avenger {
+        constructor(name, realName, isMutant) {
+            super(name, realName);
+            this.isMutant = isMutant;
+        }
+        getFullNameDesdeXmen() {
+            console.log(super.getFullName());
+        }
+    }
+    const wolverine = new Xmen('wolverine', 'Logan', true);
+    console.log(wolverine),
+        wolverine.getFullNameDesdeXmen();
+})();
+(() => {
     const fullName = (firstName, lastName, upper = false) => {
         if (upper) {
             return `${firstName} , ${lastName || 'no last name'}`.toUpperCase();
