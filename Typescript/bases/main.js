@@ -105,6 +105,9 @@ var __rest = (this && this.__rest) || function (s, e) {
 })();
 (() => {
     class Avenger {
+        static getAvAge() {
+            return `${this.name}`;
+        }
         constructor(name, team, realName) {
             this.name = name;
             this.team = team;
@@ -112,7 +115,7 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     }
     const antMan = new Avenger('Antman', 'capitan');
-    console.log(antMan);
+    console.log(Avenger.getAvAge());
 })();
 (() => {
     const fullName = (firstName, lastName, upper = false) => {
