@@ -1,3 +1,6 @@
+(()=>{
+
+  
 type vehiculos = {
   carroceria:string,
   modelo:string,
@@ -78,3 +81,6 @@ mystique = apocalipsis;
 
 
 console.log(mystique)
+
+})()
+
