@@ -295,6 +295,12 @@ var __rest = (this && this.__rest) || function (s, e) {
     };
 })();
 (() => {
+    let addNumbersFunctions;
+    addNumbersFunctions = (a, b) => {
+        return 10;
+    };
+})();
+(() => {
     let flash = {
         name: 'barry allen',
         age: 24,
