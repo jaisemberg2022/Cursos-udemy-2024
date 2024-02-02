@@ -10,8 +10,8 @@
 // console.log(ironman.power);
 // console.log(powers);
 
-import { Hero, Villian } from "./interfaces/hero";
 import { printObjecect,generciFunction,genericFunctionArrow } from "./generics/generics";
+import { Villian,Hero } from "./interfaces";
 
 // printObjecect('1111');
 // printObjecect(true);
