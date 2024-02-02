@@ -10,6 +10,7 @@
 // console.log(ironman.power);
 // console.log(powers);
 
+import { Hero, Villian } from "./interfaces/hero";
 import { printObjecect,generciFunction,genericFunctionArrow } from "./generics/generics";
 
 // printObjecect('1111');
@@ -23,7 +24,15 @@ import { printObjecect,generciFunction,genericFunctionArrow } from "./generics/g
 // console.log(generciFunction(new Date()).getDate());
 
 
-console.log(genericFunctionArrow(1.22).toFixed(2));
-console.log(genericFunctionArrow("appp").toUpperCase());
-console.log(genericFunctionArrow(new Date()).getDate());
+// console.log(genericFunctionArrow(1.22).toFixed(2));
+// console.log(genericFunctionArrow("appp").toUpperCase());
+// console.log(genericFunctionArrow(new Date()).getDate());
 
+
+const deadpool = {
+    name:'deadpool',
+    realName:'wade wins wilson',
+    dangerLevel:130
+}
+
+console.log(genericFunctionArrow<Villian>(deadpool).dangerLevel)
