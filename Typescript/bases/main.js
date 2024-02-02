@@ -295,6 +295,16 @@ class Persona {
         return 10;
     };
 })();
+var validation;
+(function (validation) {
+    validation.validateText = (text) => {
+        return text.length > 3 ? true : false;
+    };
+    const validateDate = (myDate) => {
+        return isNaN(myDate.valueOf()) ? false : true;
+    };
+    console.log(validation.validateText('fer'));
+})(validation || (validation = {}));
 (() => {
     let flash = {
         name: 'barry allen',
