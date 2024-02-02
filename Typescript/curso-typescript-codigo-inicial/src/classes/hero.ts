@@ -7,3 +7,9 @@ export class Hero{
 
     }
 }
+
+export class Hero2{}
+export class Hero3{}
+export class Hero4{}
+
+export const PI = 3.1416;
