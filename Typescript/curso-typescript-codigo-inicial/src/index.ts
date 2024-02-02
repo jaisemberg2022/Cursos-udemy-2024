@@ -6,5 +6,5 @@ console.log("Hola Mundo!");
 
 const ironman = new heroClases.Hero("ironman", 2, 44);
 
-console.log(ironman);
+console.log(ironman.power);
 console.log(powers);
