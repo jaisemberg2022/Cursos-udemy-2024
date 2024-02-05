@@ -50,4 +50,5 @@ import { Pokemon } from './interfaces/pokemon';
 // console.log(charmander)
 // (pokemon.prototype as any ).customeName ="pikachu"
 const charmander = new pokemon('charmander');
-console.log(charmander.savePokemonToDb(50))
+charmander.publicApi = "appp"
+console.log(charmander)
