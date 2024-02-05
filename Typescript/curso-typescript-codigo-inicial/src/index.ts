@@ -10,6 +10,7 @@
 // console.log(ironman.power);
 // console.log(powers);
 
+import { pokemon } from "./decorators/pokemon-class";
 import { printObjecect,generciFunction,genericFunctionArrow } from "./generics/generics";
 import { getPokemon } from "./generics/get-pokemon";
 import { Villian,Hero } from "./interfaces";
@@ -39,10 +40,12 @@ import { Villian,Hero } from "./interfaces";
 // console.log(genericFunctionArrow<Villian>(deadpool).dangerLevel)
 
 
+// getPokemon(4)
+// .then(pokemon => console.log(pokemon.sprites.front_default))
+// .catch(err => console.log(err))
+// .finally( () => console.log('fin get pokemon'))
 
 
+const charmander = new pokemon('charmander');
 
-getPokemon(4)
-.then(pokemon => console.log(pokemon.sprites.front_default))
-.catch(err => console.log(err))
-.finally( () => console.log('fin get pokemon'))
+// console.log(charmander)
