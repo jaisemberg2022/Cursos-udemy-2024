@@ -14,6 +14,7 @@ import { pokemon } from "./decorators/pokemon-class";
 import { printObjecect,generciFunction,genericFunctionArrow } from "./generics/generics";
 import { getPokemon } from "./generics/get-pokemon";
 import { Villian,Hero } from "./interfaces";
+import { Pokemon } from './interfaces/pokemon';
 
 // printObjecect('1111');
 // printObjecect(true);
@@ -47,5 +48,6 @@ import { Villian,Hero } from "./interfaces";
 
 
 const charmander = new pokemon('charmander');
+(pokemon.prototype as any ).customeName ="pikachu"
 
 // console.log(charmander)

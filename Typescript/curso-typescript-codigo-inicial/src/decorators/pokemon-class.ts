@@ -11,8 +11,15 @@ const printToConsoleConditional = ( print:boolean = false ):Function => {
     }
 }
 
+
+const bloquaePrototipo = function(constructor:Function){
+    Object.seal(constructor)
+    Object.seal(constructor.prototype)
+}
+
 // @printToConsole
-@printToConsoleConditional(  )
+@bloquaePrototipo
+@printToConsoleConditional()
 export class pokemon{
     constructor(
         public name:string = 'htpps//pokeapi.co'
