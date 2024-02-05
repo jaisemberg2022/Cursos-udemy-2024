@@ -47,7 +47,7 @@ import { Pokemon } from './interfaces/pokemon';
 // .finally( () => console.log('fin get pokemon'))
 
 
-const charmander = new pokemon('charmander');
-(pokemon.prototype as any ).customeName ="pikachu"
-
 // console.log(charmander)
+// (pokemon.prototype as any ).customeName ="pikachu"
+const charmander = new pokemon('charmander');
+console.log(charmander.savePokemonToDb(50))
