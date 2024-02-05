@@ -11,6 +11,7 @@
 // console.log(powers);
 
 import { printObjecect,generciFunction,genericFunctionArrow } from "./generics/generics";
+import { getPokemon } from "./generics/get-pokemon";
 import { Villian,Hero } from "./interfaces";
 
 // printObjecect('1111');
@@ -29,10 +30,19 @@ import { Villian,Hero } from "./interfaces";
 // console.log(genericFunctionArrow(new Date()).getDate());
 
 
-const deadpool = {
-    name:'deadpool',
-    realName:'wade wins wilson',
-    dangerLevel:130
-}
+// const deadpool = {
+//     name:'deadpool',
+//     realName:'wade wins wilson',
+//     dangerLevel:130
+// }
 
-console.log(genericFunctionArrow<Villian>(deadpool).dangerLevel)
+// console.log(genericFunctionArrow<Villian>(deadpool).dangerLevel)
+
+
+
+
+
+getPokemon(4)
+.then(resp => console.log(resp))
+.catch(err => console.log(err))
+.finally( () => console.log('fin get pokemon'))
