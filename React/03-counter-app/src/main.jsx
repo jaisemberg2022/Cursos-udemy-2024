@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { FirstApp } from "./FirstApp";
+import { CounterApp } from "./counterApp";
 import { ThemeProvider } from "@emotion/react";
 import { SincoTheme } from '@sinco/react'
 
@@ -13,7 +13,7 @@ function App() {
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={SincoTheme}>
-      <FirstApp />
+      <CounterApp  value={33}/>
     </ThemeProvider>
   </React.StrictMode>
 );
