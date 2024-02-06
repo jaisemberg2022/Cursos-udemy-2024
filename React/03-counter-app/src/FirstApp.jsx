@@ -1,4 +1,6 @@
 import  PropTypes from "prop-types";
+import Typography from '@mui/material/Typography';
+
 
 
 // const newMessage = {
@@ -14,13 +16,18 @@ export const FirstApp = ({tittle,subtitle}) => {
 
   return (
     <>
-        <h2>{ tittle }</h2>
+        <Typography variant="h1" gutterBottom>{ tittle }</Typography>
         <p>{subtitle}</p>
     </>
   )
 }
 
 FirstApp.propTypes = {
-    tittle: PropTypes.string.isRequired
-  }
+    tittle: PropTypes.string.isRequired,
+}
+
+FirstApp.defaultProps = {
+    tittle:'no hay titulo',
+    subtitle:'no hay subtitulo'
+}
 
