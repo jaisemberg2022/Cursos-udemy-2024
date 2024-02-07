@@ -13,7 +13,7 @@ function App() {
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={SincoTheme}>
-      <CounterApp  value={33}/>
+      <CounterApp  value={0}/>
     </ThemeProvider>
   </React.StrictMode>
 );
