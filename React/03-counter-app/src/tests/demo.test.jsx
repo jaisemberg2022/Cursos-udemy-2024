@@ -1,5 +1,11 @@
-test('should first', () => { 
-    if (0 === 1) {
-        throw new Error('no puede dividir entre cero')
-    }
+
+describe('primera prueba',()=>{
+    test('should first', () => { 
+        //1.inicializacion
+        const message1 = "Hola mundo";
+        //2.estimulo
+        const message2 =  message1.trim();
+        //3.Observar el comportamiento
+        expect(message1).toBe(message2);
+    }); 
 });
