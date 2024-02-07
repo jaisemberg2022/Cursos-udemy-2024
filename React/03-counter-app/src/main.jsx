@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={SincoTheme}>
       {/* <CounterApp  value={0}/> */}
-      <FirstApp/>
+      <FirstApp tittle="hola" />
     </ThemeProvider>
   </React.StrictMode>
 );

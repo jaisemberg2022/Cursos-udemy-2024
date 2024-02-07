@@ -16,7 +16,7 @@ export const FirstApp = ({tittle,subtitle}) => {
 
   return (
     <>
-        <Typography variant="h1" gutterBottom>{ tittle }</Typography>
+        <h1>{tittle}</h1>
         <p>{subtitle}</p>
     </>
   )
