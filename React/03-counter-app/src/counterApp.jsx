@@ -4,7 +4,7 @@ import React from "react";
 
 export const CounterApp = ({ value }) => {
     
-    const [counter,setCounter] = useState(0)
+    const [counter,setCounter] = useState(value)
 
     const handleAdd = () => setCounter(counter +1);
     const hanndleSubstract =()=> setCounter(counter -1);
@@ -15,7 +15,7 @@ export const CounterApp = ({ value }) => {
     <>
       <Stack p={2} display={"inline-flex"} gap={2} width={'auto'} boxShadow={2} alignItems={"center"} flexDirection={'column'} m={2}>
         <Typography variant="h4">CounterApp</Typography>
-        <Typography variant="h6">{counter}</Typography>
+        <h6>{counter}</h6>
         <Stack width={'100%'} display={'inline-flex'} gap={1} flexDirection={'row'}>
              <ButtonGroup variant="outlined">
                 <Button size='small' onClick={ handleAdd }>+1</Button>
