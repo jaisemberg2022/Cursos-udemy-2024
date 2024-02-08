@@ -19,7 +19,7 @@ export const CounterApp = ({ value }) => {
         <Stack width={'100%'} display={'inline-flex'} gap={1} flexDirection={'row'}>
              <ButtonGroup variant="outlined">
                 <Button size='small' onClick={ handleAdd }>+1</Button>
-                <Button onClick={hanndleReset}>restore</Button>
+                <Button aria-label='btn-reset' onClick={hanndleReset}>restore</Button>
                 <Button onClick={hanndleSubstract}>-1</Button>
             </ButtonGroup>
         </Stack>
