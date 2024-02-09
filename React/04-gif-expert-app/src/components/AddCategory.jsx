@@ -16,8 +16,7 @@ export const AddCategory = ({onNewCategory}) => {
   return (
     <form onSubmit={onSubmit}>
         <TextField
-          value={inputValue}
-          id="outlined-basic"
+          value =  { inputValue || ''}
           label="filtrar"
           variant="outlined"
           placeholder="Buscar gifs..."

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { ListItem, ListItemText, Divider } from "@mui/material";
 import { getGifs } from "../helpers/getGifs";
 import { GifItem } from "./GifItem";
 
@@ -16,8 +15,8 @@ export const GifGrid = ({ category }) => {
 
   return (
     <>
-      {images.map(({ id, title, url }) => (
-        <GifItem key={id}/>
+      {images.map(img => (
+        <GifItem key={img.id} {...img}/>
       ))}
     </>
   );

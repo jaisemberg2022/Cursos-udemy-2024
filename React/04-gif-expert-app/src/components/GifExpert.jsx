@@ -4,7 +4,7 @@ import { AddCategory } from "./AddCategory";
 import { GifGrid } from "./GifGrid";
 
 export const GifExpert = () => {
-  const [categories, setcategories] = useState(["Dragon ball"]);
+  const [categories, setcategories] = useState(["Resident evil 4"]);
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return;
     setcategories([newCategory, ...categories]);
@@ -17,7 +17,7 @@ export const GifExpert = () => {
         {/* input */}
         <AddCategory onNewCategory={onAddCategory}/>
         {/* imagenes */}
-        <Stack display={"inline-flex"} alignItems={"flex-start"} gap={2} boxShadow={2} bgcolor={"white"}>
+        <Stack display={"inline-flex"} alignItems={"flex-start"} gap={1} flexDirection={'row'}>
           {/* <List sx={{flexBasis:'100%', width:'100%'}} > */}
             {categories.map((categorie) => (<GifGrid key={categorie}  category={categorie}/>))}
           {/* </List> */}
