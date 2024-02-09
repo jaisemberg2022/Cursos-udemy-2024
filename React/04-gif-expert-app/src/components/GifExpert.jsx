@@ -18,9 +18,9 @@ export const GifExpert = () => {
         <AddCategory onNewCategory={onAddCategory}/>
         {/* imagenes */}
         <Stack display={"inline-flex"} alignItems={"flex-start"} gap={2} boxShadow={2} bgcolor={"white"}>
-          <List sx={{flexBasis:'100%', width:'100%'}} >
+          {/* <List sx={{flexBasis:'100%', width:'100%'}} > */}
             {categories.map((categorie) => (<GifGrid key={categorie}  category={categorie}/>))}
-          </List>
+          {/* </List> */}
         </Stack>
       </Box>
     </>

@@ -24,6 +24,7 @@ export const AddCategory = ({onNewCategory}) => {
           InputLabelProps={{ shrink: true }}
           onChange={onInputChange}
           autoComplete="off"
+          size="small"
         />
     </form>
   );
