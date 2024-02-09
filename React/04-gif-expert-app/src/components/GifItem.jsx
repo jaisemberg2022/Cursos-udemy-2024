@@ -1,8 +1,8 @@
 import React from "react";
 import { Divider, Card, CardContent, CardMedia } from "@mui/material";
+import PropTypes from 'prop-types'
 
 export const GifItem = ({ url,title }) => {
-    console.log(url)
   return (
     <>
       <Card sx={{flex:1,height:'auto'}}>
@@ -13,3 +13,9 @@ export const GifItem = ({ url,title }) => {
     </>
   );
 };
+
+GifItem.propTypes = {
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+
+}
