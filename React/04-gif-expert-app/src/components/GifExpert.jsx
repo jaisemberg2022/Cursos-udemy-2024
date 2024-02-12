@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import {Typography,Stack,Box,List} from "@mui/material";
-import { AddCategory } from "./AddCategory";
-import { GifGrid } from "./GifGrid";
+import {Typography,Stack,Box} from "@mui/material";
+import { AddCategory,GifGrid } from "./index";
 
 export const GifExpert = () => {
   const [categories, setcategories] = useState(["Resident evil 4"]);
