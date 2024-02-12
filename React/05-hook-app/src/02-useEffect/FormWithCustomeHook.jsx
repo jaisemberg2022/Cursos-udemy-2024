@@ -4,7 +4,7 @@ import { useForm } from "../hooks/useForm";
 
 const FormWithCustomeHook = () => {
  
-  const {formState,onInputChnge,userName,userEmail,userPassword} = useForm({
+  const {formState,onInputChnge,userName,userEmail,userPassword,onDeletForm} = useForm({
     userName: "",
     userEmail: "",
     userPassword: "",
@@ -49,6 +49,7 @@ const FormWithCustomeHook = () => {
           value={userPassword}
           onChange={onInputChnge}
         />
+        <button onClick={onDeletForm}>Borrar</button>
     </>
   );
 };

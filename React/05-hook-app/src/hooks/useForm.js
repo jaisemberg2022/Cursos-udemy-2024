@@ -11,9 +11,15 @@ export const useForm = (initialForm = {}) => {
     });
   };
 
+
+  const onDeletForm = ()=>{
+    setform(initialForm)
+  }
+
   return {
     ...formState,
     formState,
-    onInputChnge
+    onInputChnge,
+    onDeletForm
   };
 };
