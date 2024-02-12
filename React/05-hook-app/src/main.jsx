@@ -6,13 +6,17 @@ import CounterApp from './01-useState/CounterApp'
 import CounterWithCustomeHooks from './01-useState/CounterWithCustomeHooks'
 import SimpleForm from './02-useEffect/SimpleForm'
 import FormWithCustomeHook from './02-useEffect/FormWithCustomeHook'
+import MultipleCustomeHook from './03-examples/MultipleCustomeHook'
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <CounterApp/> */}
     {/* <CounterWithCustomeHooks/> */}
     {/* <SimpleForm/> */}
-    <FormWithCustomeHook/>
+    {/* <FormWithCustomeHook/> */}
+    <MultipleCustomeHook/>  
     {/* <HooksApp/> */}
   </React.StrictMode>,
 )
