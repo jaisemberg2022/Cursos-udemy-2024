@@ -2,9 +2,9 @@ import { render, screen } from "@testing-library/react";
 import { GifGrid } from "../../components";
 import { expect, jest, test } from "@jest/globals";
 
-import { useFetchGifs } from "../../hooks/useGetchsGif";
+import { useFetchGifs } from "../../hooks/useGetFetchsGif";
 
-jest.mock("../../hooks/useGetchsGif");
+jest.mock("../../hooks/useGetFetchsGif");
 
 describe("pruebas en componente <GifGrid/>", () => {
   const category = "Silent hill";
