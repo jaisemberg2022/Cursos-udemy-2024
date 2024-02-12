@@ -5,12 +5,14 @@ import HooksApp from './hooksApp'
 import CounterApp from './01-useState/CounterApp'
 import CounterWithCustomeHooks from './01-useState/CounterWithCustomeHooks'
 import SimpleForm from './02-useEffect/SimpleForm'
+import FormWithCustomeHook from './02-useEffect/FormWithCustomeHook'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <CounterApp/> */}
     {/* <CounterWithCustomeHooks/> */}
-    <SimpleForm/>
+    {/* <SimpleForm/> */}
+    <FormWithCustomeHook/>
     {/* <HooksApp/> */}
   </React.StrictMode>,
 )
