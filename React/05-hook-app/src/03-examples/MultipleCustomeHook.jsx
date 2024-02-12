@@ -1,8 +1,11 @@
 import React from "react";
-import useFetch from "../hooks/useFetch";
-import { useCounter } from "../hooks/useCounter";
+// import useFetch from "../hooks/useFetch";
+// import { useCounter } from "../hooks/useCounter";
+import {useFetch,useCounter} from '../hooks'
 import Alert from "@mui/material/Alert";
-import { Button, Typography } from "@mui/material";
+import { Button } from "@mui/material";
+import Quote from "./Quote";
+
 
 const MultipleCustomeHook = () => {
   const { counter, increment } = useCounter(1);
@@ -15,14 +18,11 @@ const MultipleCustomeHook = () => {
     <>
       <h1>Breaking qoutes</h1>
       <hr />
-      {isLoading ? (
-        <Alert severity="info">loading...</Alert>
-      ) : (
-        <blockquote>
-          <Typography variant="subtitle2">{quote}</Typography>
-          <footer>--{author}</footer>
-        </blockquote>
-      )}
+      {
+        isLoading 
+        ?<Alert severity="info">loading...</Alert> 
+        :<Quote quote={quote} author={author}/>
+      }
       <Button
         disableElevation
         variant="contained"
