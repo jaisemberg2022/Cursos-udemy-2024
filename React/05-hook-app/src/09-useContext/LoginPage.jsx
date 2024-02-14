@@ -10,11 +10,11 @@ const LoginPage = () => {
   return (
     <>
     <div>LoginPage</div>
-    <pre>
+    <pre aria-label='pre'>
       {JSON.stringify(user,null,3)}
     </pre>
     <br />
-    <Button variant='outlined' onClick={()=> setUser({id:123,name:'app',email:'app@gmail.com'})}>Establecer usuario</Button>
+    <Button aria-label='button-user' variant='outlined' onClick={()=> setUser({id:123,name:'app',email:'app@gmail.com'})}>Establecer usuario</Button>
     </>
   )
 }

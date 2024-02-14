@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { useContext } from "react";
+import { UserContext } from "./context/userContext";
 
 const HomePage = () => {
+  const { user } = useContext(UserContext);
   return (
-    <div>HomePage</div>
-  )
-}
+    <>
+      <pre aria-label="pre">{JSON.stringify(user, null, 3)}</pre>
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
