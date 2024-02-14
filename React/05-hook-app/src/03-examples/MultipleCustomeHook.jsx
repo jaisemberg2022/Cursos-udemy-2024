@@ -27,6 +27,7 @@ const MultipleCustomeHook = () => {
         disableElevation
         variant="contained"
         color="primary"
+        aria-label="next-button"
         disabled={isLoading}
         onClick={() => increment()}
       >
