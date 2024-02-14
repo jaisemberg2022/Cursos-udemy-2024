@@ -14,8 +14,8 @@ const TodoAdd = ({onNewTodo}) => {
     event.preventDefault();
     if (description.length <=1) return;
     const newTodo = {
-      id:new Date().getDate() * 3,
-      donde:false,
+      id:new Date().getTime() * Math.random(),
+      done:false,
       description
     }
     onNewTodo(newTodo);

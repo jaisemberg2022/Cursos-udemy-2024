@@ -1,17 +1,32 @@
-import React from 'react'
-import { Button,Divider,ListItem,ListItemText } from '@mui/material'
+import React from "react";
+import { Button, Divider, ListItem, ListItemText } from "@mui/material";
 
-
-const TodoListItem = ({id,description,onDeleteTodo}) => {
+const TodoListItem = ({
+  id,
+  description,
+  onDeleteTodo,
+  onToggleTodo,
+  done,
+}) => {
   return (
     <>
-        <ListItem  >
-            <ListItemText primary={description} />
-            <Button size='small' variant='contained' disableElevation color='error' onClick={()=>onDeleteTodo(id)}>Borrar</Button>
-        </ListItem>
-        <Divider/>
+      <ListItem className={`${done ? "text-line-through" : ""}`}>
+        <ListItemText
+          primary={description}
+        />
+        <Button
+          size="small"
+          variant="contained"
+          disableElevation
+          color="error"
+          onClick={() => onDeleteTodo(id)}
+        >
+          Borrar
+        </Button>
+      </ListItem>
+      <Divider />
     </>
-  )
-}
+  );
+};
 
-export default TodoListItem
+export default TodoListItem;

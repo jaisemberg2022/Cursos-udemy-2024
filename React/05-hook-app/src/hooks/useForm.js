@@ -11,7 +11,6 @@ export const useForm = (initialForm = {}) => {
     });
   };
 
-
   const onDeletForm = ()=>{
     setform(initialForm)
   }

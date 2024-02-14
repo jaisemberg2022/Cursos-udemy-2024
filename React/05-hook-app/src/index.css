@@ -7,3 +7,7 @@
 body{
     background-color: #f1f0ee;
 }
+
+.text-line-through{
+    text-decoration:line-through !important;
+}
