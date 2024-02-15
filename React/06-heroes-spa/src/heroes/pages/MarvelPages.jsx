@@ -1,9 +1,8 @@
 import React from 'react'
 
-const MarvelPages = () => {
+export const MarvelPages = () => {
   return (
     <div>MarvelPages</div>
   )
 }
 
-export default MarvelPages
