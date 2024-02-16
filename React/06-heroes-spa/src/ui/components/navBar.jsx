@@ -1,8 +1,15 @@
 import React from 'react'
 import { Stack,Typography,Toolbar,Box,AppBar,Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const NavBar = () => {
+
+  const navigate = useNavigate();
+  const onLogout = ()=>{
+    navigate('/Login',{
+      replace:true
+    })
+  }
   return (
     <AppBar component="nav" position={'fixed'} elevation={1} color='primary' >
       <Toolbar >
@@ -11,6 +18,7 @@ export const NavBar = () => {
           <Box display={'inline-flex'} gap={1} flexWrap={'nowrap'}>
             <Button component={Link} to="/marvel" variant="text" color="inherit">Marvel</Button>
             <Button component={Link} to="/dc" variant="text" color="inherit">Dc</Button>
+            <Button variant="text" onClick={onLogout} color="inherit">Logut</Button>
           </Box>
         </Stack>
       </Toolbar>
