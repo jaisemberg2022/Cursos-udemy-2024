@@ -1,0 +1,1 @@
+SELECT COUNT(idPaciente) FROM Paciente WHERE apellido = 'Ramirez'
