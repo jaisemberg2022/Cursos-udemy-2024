@@ -1,0 +1,1 @@
+SELECT idPais FROM Paciente Group By idPais
