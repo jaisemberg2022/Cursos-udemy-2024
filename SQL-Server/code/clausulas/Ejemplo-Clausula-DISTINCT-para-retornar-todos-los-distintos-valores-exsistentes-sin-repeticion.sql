@@ -1,1 +1,1 @@
-SELECT idPais FROM Paciente Group By idPais
+SELECT DISTINCT idPais FROM Paciente Group By idPais
