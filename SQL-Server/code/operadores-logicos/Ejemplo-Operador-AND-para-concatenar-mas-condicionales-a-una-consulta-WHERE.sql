@@ -1,0 +1,1 @@
+SELECT * FROM Paciente WHERE apellido = 'Ramirez' AND idPais = 'COL' AND idPaciente = 5

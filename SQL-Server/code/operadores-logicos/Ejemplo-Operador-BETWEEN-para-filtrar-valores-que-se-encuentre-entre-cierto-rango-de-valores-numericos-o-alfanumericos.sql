@@ -1,0 +1,3 @@
+SELECT * FROM Turno WHERE fechaTurno BETWEEN '2023-05-23' and '2023-05-23'
+
+SELECT * FROM Turno WHERE estado BETWEEN 0 and 2
