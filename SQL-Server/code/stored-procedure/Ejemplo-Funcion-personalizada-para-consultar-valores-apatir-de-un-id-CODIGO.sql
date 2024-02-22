@@ -1,4 +1,4 @@
-CREATE PROC SP_ejemplo(
+CREATE PROCEDURE SP_ejemplo(
 	@idPaciente int 
 )
 AS
