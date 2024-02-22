@@ -1,0 +1,14 @@
+--recibe 2 parametros 
+-- (1) intervalo a averiguar (segundos,minutos,horas,dias,meses,a�os)
+-- (2) fecha en concreto (21-03-2022)
+
+select DATEPART(SECOND,'2024-02-22T10:47:58.3370848-05:00') AS SEGUNDO
+select DATEPART(MINUTE,'2024-02-22T10:47:58.3370848-05:00') AS MINUTO
+select DATEPART(HOUR,'2024-02-22T10:47:58.3370848-05:00') AS HORA
+select DATEPART(DAY,'2023-05-11') AS DIA
+select DATEPART(WEEK,'2023-01-14') AS SEMANA
+select DATEPART(MONTH,'2023-06-14') AS MES
+select DATEPART(YEAR,'2024-06-14') AS MES
+
+
+PRINT GETDATE()
