@@ -11,6 +11,13 @@ Los beneficios del encapsulamiento son:
     1).Control de acceso: Se puede especificar quién tiene acceso a los datos y quién no. Esto ayuda a prevenir modificaciones no deseadas o inconsistentes en los datos.
     2).Ocultamiento de detalles internos: Los detalles de implementación de una clase se mantienen ocultos, lo que facilita el cambio de la implementación sin afectar a los objetos que la utilizan.
     3).Facilita la mantenibilidad: Al tener una interfaz pública bien definida, es más fácil identificar y corregir problemas en el código, ya que se sabe dónde se realizan las interacciones con el objeto.
+
+
+Beneficios del Encapsulamiento:
+
+    1).Evita la manipulación incorrecta de datos por parte del usuario.
+    2).Mejora la legibilidad del código al ocultar detalles de implementación.
+    3).Facilita la adición de comportamientos específicos en nuevas propiedades.
 */
 
     class SuperHeroes
@@ -27,7 +34,7 @@ Los beneficios del encapsulamiento son:
                 _nombre = value.Trim();
             } 
         }
-        
+
         public string NombreEIdentidadSecreta 
         {
             get 
