@@ -3,7 +3,7 @@ Console.WriteLine("Hello, World!");
 Apuntador apuntadorPlatzi = new Apuntador();
 Apuntador apuntadorPlatzi2 = new Apuntador();
 
-//los objetos utilizan las clases a modo de tipado para definir un estructura propia que albergara diferentes contenidos
+//los objetos son instancias de las clases a modo de tipado para definir un estructura propia que albergara diferentes contenidos
 apuntadorPlatzi.Color = "Negro";
 apuntadorPlatzi2.Color = "Negro";
 
