@@ -13,7 +13,7 @@ DRY: Don’t Repeat Yourself (No te repitas) .
 */
 
     // mal
-        var int pago = 200;
+        var pago = 200;
         if(pago < 300)
         {
             return 'pago incorrecto'
