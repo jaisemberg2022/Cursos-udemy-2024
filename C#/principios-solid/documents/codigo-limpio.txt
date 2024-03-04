@@ -1,0 +1,25 @@
+¿Qué son las buenas prácticas y el código limpio?>
+
+Buenas prácticas-Best practices
+
+    1).Nos permiten resolver conflictos de escenarios comunes.
+    2).Brindan guías que son sencillas de comprender, aprender y aplicar.
+    3).Permiten contar con una estructura similar para múltiples proyectos.
+    4).Diferencia entre buenas prácticas y estándares
+
+Las buenas prácticas ya están comprobadas; pues han sido utilizadas muchas veces y esto comprueba su funcionalidad. Estas ayudan a tener un mejor código, arquitectura y a comprender fácilmente el código.
+Código limpio- Clean code
+
+    1).Se refiere a buenas prácticas dirigidas al código.
+    2).Es fácil de entender, analizar, mantener, actualizar y escalar.
+
+¿Cómo lograr código limpio?
+
+Algunas reglas a seguir son:
+
+    1).Mantener bajo acoplamiento. Se busca que no exista dependencia entre componentes.
+    2).Uso de sintaxis simple y actual.
+    3).Evitar incorporar muchas librerías de terceros. Para evitar dependencias y mantener el control del código.
+    4).Distribución de responsabilidades. Cada componente debe contar con una sola responsabilidad específica.
+    5).Crear componentes pequeños.
+

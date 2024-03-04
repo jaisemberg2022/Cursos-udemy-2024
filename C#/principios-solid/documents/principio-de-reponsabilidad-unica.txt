@@ -1,0 +1,7 @@
+Single responsability principle Se trata de distribuir las responsabilidades de un software en un grupo de componentes, haciendo que cada
+componente tenga una única responsabilidad. Aplica para:
+
+    1).Módulos
+    2).Clases
+    3).Métodos
+    4).Funciones
