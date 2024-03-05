@@ -1,0 +1,17 @@
+¿Qué es LINQ?
+
+Es una librería creada en el 2017 que se utiliza en el desarrollo con varios lenguajes. En este caso
+se va abordar su uso en el framework .NET.
+
+    1).Las siglas de LINQ significan Language Integrated Query. Como sus siglas lo dicen, es una librería 
+    para trabajar con consultas a colecciones.
+    2).Existen dos formas de utilizar link, la primera es query expression, esta modalidad 
+    permite usar sentencias sql dentro del lenguaje de programación. La segunda forma de trabajar
+    con LINQ es con métodos de extensión, estos proveen de un conjunto de funciones que permiten realizar consultas a través de ellas en lugar de usar sintaxis de SQL.
+
+¿Qué no es LINQ?
+
+    1).No es un lenguaje de programación
+    2).No es un componente de SQL
+    3).No es un componente de base de datos
+    4).No es una librería de terceros.

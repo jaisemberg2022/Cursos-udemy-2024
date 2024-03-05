@@ -1,0 +1,15 @@
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\bin\Debug\net8.0\curso-LINQ.exe
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\bin\Debug\net8.0\curso-LINQ.deps.json
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\bin\Debug\net8.0\curso-LINQ.runtimeconfig.json
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\bin\Debug\net8.0\curso-LINQ.dll
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\bin\Debug\net8.0\curso-LINQ.pdb
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\curso-LINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\curso-LINQ.AssemblyInfoInputs.cache
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\curso-LINQ.AssemblyInfo.cs
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\curso-LINQ.csproj.CoreCompileInputs.cache
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\curso-LINQ.sourcelink.json
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\curso-LINQ.dll
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\refint\curso-LINQ.dll
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\curso-LINQ.pdb
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\curso-LINQ.genruntimeconfig.cache
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net8.0\ref\curso-LINQ.dll
