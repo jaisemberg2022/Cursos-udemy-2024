@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace curso_LINQ
@@ -14,13 +15,32 @@ namespace curso_LINQ
             using (StreamReader reader = new StreamReader("books.json"))
             {
                 string json = reader.ReadToEnd();
-                this.librosCollection = System.Text.Json.JsonSerializer.Deserialize<List<Book>>(json, new System.Text.Json.JsonSerializerOptions() { PropertyNameCaseInsensitive = true} ) ;
-
+                this.librosCollection = JsonSerializer.Deserialize<List<Book>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? Enumerable.Empty<Book>().ToList();
             }
         }
         public IEnumerable<Book> todaLaCollecion()
         {
             return librosCollection ;
+        }
+
+        public IEnumerable<Book> LibrosDespuesDel200()
+        {
+            //extencion metohd
+            //return librosCollection.Where(p => p.publishedDate.Year > 2000);
+
+            //query exprecion
+            return from l in librosCollection where l.publishedDate.Year > 2000 select l;
+        }
+
+        public IEnumerable<Book> LibrosConMasDe250PaginasInAction()
+        {
+            //extencion metodh
+            //return librosCollection.Where(p => p.PageCount > 250 && p.Title.Contains("in Action"));
+
+            //query exprecion
+            return from l in librosCollection where l.PageCount> 250 && l.Title.Contains("in Action") select l;
+
+
         }
     }
 
