@@ -51,9 +51,15 @@ LinqQueries Queries = new LinqQueries();
 
 
 // libro con mayor cantidad de paginas que no sea cero
-var resultado = Queries.LibroConFechaDePublicacionMasReciente();
-Console.WriteLine("el libro " + resultado.Title + " se publico " + resultado.publishedDate.ToShortDateString());
+// var resultado = Queries.LibroConFechaDePublicacionMasReciente();
+// Console.WriteLine("el libro " + resultado.Title + " se publico " + resultado.publishedDate.ToShortDateString());
 
+//suma de paginas de los libros entre 0 y 500
+// Console.WriteLine("la suma de todas las paginas es de  " + Queries.SumaDeTodasLasPaginasLibrosEntre0Y500());
+
+
+// libros publicados despues del 2015
+Console.WriteLine(Queries.TitulosDeLibrosDespuesDel2015Concatenados());
 
 
 
