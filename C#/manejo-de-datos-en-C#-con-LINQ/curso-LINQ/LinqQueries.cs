@@ -119,6 +119,10 @@ namespace curso_LINQ
         public double PromedioCaracteresTitulo(){
             return librosCollection.Average(p=>p.Title.Length);
         }
+
+        public IEnumerable<IGrouping<int,Book>> LibrosDespuesDel2000AgrupadosPorFecha(){
+            return librosCollection.Where(p => p.publishedDate.Year >= 2000).GroupBy(p => p.publishedDate.Year);
+        }
     }
 
 }
