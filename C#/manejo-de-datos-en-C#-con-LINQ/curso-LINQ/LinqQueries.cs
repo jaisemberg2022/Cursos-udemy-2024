@@ -57,6 +57,19 @@ namespace curso_LINQ
         public IEnumerable<Book> LibrosDeMasDe450PaginasOrdenadosDescendentemente(){
             return librosCollection.Where(p=>p.PageCount > 450).OrderByDescending(p=>p.PageCount);
         }
+        public IEnumerable<Book> TresPrimerosLibrosJavaOrdenadosPorFecha(){
+            return librosCollection
+            .Where(p => p.Categories.Contains("Java"))
+            .OrderByDescending(p => p.publishedDate)
+            .TakeLast(3);
+        } 
+
+        public IEnumerable<Book> TercerYCuartoLibroDeMasDe400Paginas(){
+            return librosCollection
+            .Where(p => p.PageCount > 400)
+            .Take(4)
+            .Skip(2);
+        }
     }
 
 }
