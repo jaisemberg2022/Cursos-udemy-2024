@@ -59,7 +59,12 @@ LinqQueries Queries = new LinqQueries();
 
 
 // libros publicados despues del 2015
-Console.WriteLine(Queries.TitulosDeLibrosDespuesDel2015Concatenados());
+// Console.WriteLine(Queries.TitulosDeLibrosDespuesDel2015Concatenados());
+
+
+// promedio de caractere de los titulos de los libros
+Console.WriteLine("el promedio de caracteres de los libros es de " + Queries.PromedioCaracteresTitulo());
+
 
 
 

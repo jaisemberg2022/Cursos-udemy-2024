@@ -116,6 +116,9 @@ namespace curso_LINQ
             });
         }
         
+        public double PromedioCaracteresTitulo(){
+            return librosCollection.Average(p=>p.Title.Length);
+        }
     }
 
 }
