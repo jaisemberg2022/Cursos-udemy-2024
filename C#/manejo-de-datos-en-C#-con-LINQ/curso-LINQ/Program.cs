@@ -43,7 +43,17 @@ LinqQueries Queries = new LinqQueries();
 //  Console.WriteLine(Queries.FechaDePublicacionMenor());
 
 //libro con mayor numero depaginas
- Console.WriteLine("el libro con mayor cantidad de paginas tiene "+Queries.NumeroDePaginasLibroMayor() + " paginas");
+//  Console.WriteLine("el libro con mayor cantidad de paginas tiene "+Queries.NumeroDePaginasLibroMayor() + " paginas");
+
+// libro con menor cantidad de paginas que no sea cero
+// var resultado = Queries.LibroConMenorNumeroDePaginas();
+// Console.WriteLine("el libro " + resultado.Title + " tiene " + resultado.PageCount + " paginas" );
+
+
+// libro con mayor cantidad de paginas que no sea cero
+var resultado = Queries.LibroConFechaDePublicacionMasReciente();
+Console.WriteLine("el libro " + resultado.Title + " se publico " + resultado.publishedDate.ToShortDateString());
+
 
 
 
