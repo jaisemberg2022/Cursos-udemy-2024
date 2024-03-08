@@ -21,6 +21,13 @@ LinqQueries Queries = new LinqQueries();
 //libros de python
 // ImprimirValores(Queries.LibrosDePython());
 
+//libros de java ordenados por nombre
+// ImprimirValores(Queries.LibrosDeJavaPorNombreAscendente());
+
+//libros con mas de 450 paginas
+ImprimirValores(Queries.LibrosDeMasDe450PaginasOrdenadosDescendentemente());
+
+
 
 
 void ImprimirValores(IEnumerable<Book> listaLibros)
