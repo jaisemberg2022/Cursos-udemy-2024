@@ -39,9 +39,13 @@ namespace curso_LINQ
 
             //query exprecion
             return from l in librosCollection where l.PageCount> 250 && l.Title.Contains("in Action") select l;
-
-
         }
+        public bool TodosLosLibrosTieneStatus(){
+            return librosCollection.All(p=> p.Status != string.Empty);
+        }
+        public bool SiAlgunLibroFuePublicadoEn2005(){
+            return librosCollection.Any(p => p.publishedDate.Year == 2005);
+        } 
     }
 
 }

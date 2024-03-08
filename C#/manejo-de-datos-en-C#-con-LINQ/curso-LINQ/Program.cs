@@ -10,7 +10,14 @@ LinqQueries Queries = new LinqQueries();
 //ImprimirValores(Queries.LibrosDespuesDel200());
 
 //libros con mas de 250 paginas
-ImprimirValores(Queries.LibrosConMasDe250PaginasInAction());
+// ImprimirValores(Queries.LibrosConMasDe250PaginasInAction());
+
+// todos los libros tiene status
+// Console.WriteLine(Queries.TodosLosLibrosTieneStatus());
+
+//si algun libro fue publicado en 2005
+Console.WriteLine(Queries.SiAlgunLibroFuePublicadoEn2005());
+
 
 void ImprimirValores(IEnumerable<Book> listaLibros)
 {

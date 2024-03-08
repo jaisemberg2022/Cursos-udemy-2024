@@ -7,9 +7,9 @@ C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6
 C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\curso-LINQ.AssemblyInfoInputs.cache
 C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\curso-LINQ.AssemblyInfo.cs
 C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\curso-LINQ.csproj.CoreCompileInputs.cache
-C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\curso-LINQ.sourcelink.json
 C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\curso-LINQ.dll
 C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\refint\curso-LINQ.dll
 C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\curso-LINQ.pdb
 C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\curso-LINQ.genruntimeconfig.cache
 C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\ref\curso-LINQ.dll
+C:\Cursos udemy 2024\C#\manejo-de-datos-en-C#-con-LINQ\curso-LINQ\obj\Debug\net6.0\curso-LINQ.csproj.AssemblyReference.cache
