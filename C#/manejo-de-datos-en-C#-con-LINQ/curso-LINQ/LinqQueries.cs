@@ -70,6 +70,11 @@ namespace curso_LINQ
             .Take(4)
             .Skip(2);
         }
+
+        public IEnumerable<Book> TresPrimerosLibrosDeLaColeccion(){
+            return librosCollection.Take(3)
+            .Select(p => new Book() {Title = p.Title, PageCount = p.PageCount});
+        }
     }
 
 }

@@ -31,11 +31,10 @@ LinqQueries Queries = new LinqQueries();
 // ImprimirValores(Queries.TresPrimerosLibrosJavaOrdenadosPorFecha());
 
 //tercer y cuarto libro con mas de 400 paginas
-ImprimirValores(Queries.TercerYCuartoLibroDeMasDe400Paginas());
+// ImprimirValores(Queries.TercerYCuartoLibroDeMasDe400Paginas());
 
-
-
-
+//tres primeros libros filtrados con select 
+ImprimirValores(Queries.TresPrimerosLibrosDeLaColeccion());
 
 
 void ImprimirValores(IEnumerable<Book> listaLibros)
