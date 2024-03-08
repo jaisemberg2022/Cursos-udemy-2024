@@ -79,6 +79,14 @@ namespace curso_LINQ
         public long CantidadDeLibrosEntre200Y500Paginas(){
             return librosCollection.LongCount(p => p.PageCount >=200 && p.PageCount <=500);
         }
+
+        public DateTime FechaDePublicacionMenor(){
+            return librosCollection.Min(p => p.publishedDate);
+        } 
+
+        public int NumeroDePaginasLibroMayor(){
+            return librosCollection.Max(p => p.PageCount);
+        }
     }
 
 }
