@@ -123,6 +123,9 @@ namespace curso_LINQ
         public IEnumerable<IGrouping<int,Book>> LibrosDespuesDel2000AgrupadosPorFecha(){
             return librosCollection.Where(p => p.publishedDate.Year >= 2000).GroupBy(p => p.publishedDate.Year);
         }
+        public ILookup<char,Book> DiccionarioDeLibrosPorLetra(){
+            return librosCollection.ToLookup(p => p.Title[0], p=> p);
+        }
     }
 
 }
