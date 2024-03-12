@@ -73,6 +73,9 @@ LinqQueries Queries = new LinqQueries();
 // var diccionarioLookup = Queries.DiccionarioDeLibrosPorLetra();
 // ImprimirDiccionario(DiccionarioDeLibrosPorLetra,'S'); 
 
+// libros filtrados con la clausula join 
+ImprimirValores(Queries.LibrosDespuesDel2005ConMasDe500Paginas());
+
 
 
 void ImprimirValores(IEnumerable<Book> listaLibros)

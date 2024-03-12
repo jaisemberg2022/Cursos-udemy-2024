@@ -126,6 +126,12 @@ namespace curso_LINQ
         public ILookup<char,Book> DiccionarioDeLibrosPorLetra(){
             return librosCollection.ToLookup(p => p.Title[0], p=> p);
         }
+
+        public IEnumerable<Book> LibrosDespuesDel2005ConMasDe500Paginas(){
+            var librosDespuesDel2005 = librosCollection.Where(p => p.publishedDate.Year > 2005);
+            var librosConMasDe400Paginas = librosCollection.Where(p => p.PageCount>500);
+            return librosDespuesDel2005.Join(librosConMasDe500Paginas,p => p.Title,x => x.Title,(p,x)=> p);
+        }
     }
 
 }
