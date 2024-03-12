@@ -1,0 +1,15 @@
+
+
+Common language runtime - CLR
+
+Todos los lenguajes que se ejecutan en .NET son compilados por lo tanto 
+pasan de una sintaxis de alto nivel a bajo nivel. Una vez que se ha realizado esta transformación 
+entra un componente a ejecutar ese lenguaje de bajo nivel, siendo esta la labor del CLR. 
+Representa un elemento importante debido a que siempre se está pasando de un 
+lenguaje de alto nivel a bajo nivel y el CLR entra en acción.
+
+El CLR solo funciona en tiempo de ejecución, de lo contrario no realiza ningún trabajo.
+
+Permite agilizar la ejecución de código compilado, permitiendo a .NET ser una 
+plataforma más rápida y mejorando el rendimiento.
+
