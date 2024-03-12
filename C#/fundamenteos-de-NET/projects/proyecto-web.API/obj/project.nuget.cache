@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ln4nX2sac9mA6iFcpshMQNq0hNw/o1Dr7dh4GZPhjX2zOJZc/V8L9AZzq+8NtsxitRRTeZ3LSP0idb0IewmVNg==",
+  "success": true,
+  "projectFilePath": "C:\\Cursos udemy 2024\\C#\\fundamenteos-de-NET\\projects\\proyecto-web.API\\proyecto-web.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaider.toro\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\jaider.toro\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\jaider.toro\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\jaider.toro\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\jaider.toro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\jaider.toro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
