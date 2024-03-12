@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Cursos udemy 2024\\C#\\fundamenteos-de-NET\\proyecto-de-consola\\proyecto-de-consola.csproj",
+      "projectUniqueName": "C:\\Cursos udemy 2024\\C#\\fundamenteos-de-NET\\projects\\proyecto-de-consola\\proyecto-de-consola.csproj",
       "projectName": "proyecto-de-consola",
-      "projectPath": "C:\\Cursos udemy 2024\\C#\\fundamenteos-de-NET\\proyecto-de-consola\\proyecto-de-consola.csproj",
+      "projectPath": "C:\\Cursos udemy 2024\\C#\\fundamenteos-de-NET\\projects\\proyecto-de-consola\\proyecto-de-consola.csproj",
       "packagesPath": "C:\\Users\\jaider.toro\\.nuget\\packages\\",
-      "outputPath": "C:\\Cursos udemy 2024\\C#\\fundamenteos-de-NET\\proyecto-de-consola\\obj\\",
+      "outputPath": "C:\\Cursos udemy 2024\\C#\\fundamenteos-de-NET\\projects\\proyecto-de-consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jaider.toro\\AppData\\Roaming\\NuGet\\NuGet.Config"

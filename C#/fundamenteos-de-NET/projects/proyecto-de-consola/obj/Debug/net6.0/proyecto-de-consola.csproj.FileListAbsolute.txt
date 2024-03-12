@@ -13,3 +13,8 @@ C:\Cursos udemy 2024\C#\fundamenteos-de-NET\proyecto-de-consola\obj\Debug\net6.0
 C:\Cursos udemy 2024\C#\fundamenteos-de-NET\proyecto-de-consola\obj\Debug\net6.0\proyecto-de-consola.pdb
 C:\Cursos udemy 2024\C#\fundamenteos-de-NET\proyecto-de-consola\obj\Debug\net6.0\proyecto-de-consola.genruntimeconfig.cache
 C:\Cursos udemy 2024\C#\fundamenteos-de-NET\proyecto-de-consola\obj\Debug\net6.0\ref\proyecto-de-consola.dll
+C:\Cursos udemy 2024\C#\fundamenteos-de-NET\projects\proyecto-de-consola\obj\Debug\net6.0\proyecto-de-consola.csproj.AssemblyReference.cache
+C:\Cursos udemy 2024\C#\fundamenteos-de-NET\projects\proyecto-de-consola\obj\Debug\net6.0\proyecto-de-consola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cursos udemy 2024\C#\fundamenteos-de-NET\projects\proyecto-de-consola\obj\Debug\net6.0\proyecto-de-consola.AssemblyInfoInputs.cache
+C:\Cursos udemy 2024\C#\fundamenteos-de-NET\projects\proyecto-de-consola\obj\Debug\net6.0\proyecto-de-consola.AssemblyInfo.cs
+C:\Cursos udemy 2024\C#\fundamenteos-de-NET\projects\proyecto-de-consola\obj\Debug\net6.0\proyecto-de-consola.csproj.CoreCompileInputs.cache
