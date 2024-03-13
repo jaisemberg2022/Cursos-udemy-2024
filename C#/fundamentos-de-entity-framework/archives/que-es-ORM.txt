@@ -1,0 +1,8 @@
+
+¿QUE ES ORM?
+Object Relational Mapping
+
+ORM Es una herramienta que realiza un mapeo que nos permite transformar 
+los objetos de la base de datos como tablas y esquemas a clases 
+con atributos en código de programación para poder manipular la 
+información de una forma más fácil sin requerir de SQL.
