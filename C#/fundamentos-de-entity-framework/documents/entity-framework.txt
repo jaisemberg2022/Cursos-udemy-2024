@@ -1,0 +1,40 @@
+Introducción a Entity Framework
+
+Entity Framework es un marco de trabajo de mapeo objeto-relacional (ORM) 
+para Microsoft .NET que permite a los desarrolladores trabajar con bases
+de datos relacionales mediante objetos y entidades en lugar de 
+tablas y columnas.
+
+Con Entity Framework, se pueden crear modelos de datos lógicos que representan 
+las entidades y las relaciones entre ellas, y luego mapearlos a la estructura 
+de la base de datos relacional subyacente. Esto significa que los desarrolladores
+pueden escribir código en términos de objetos y entidades, en lugar de escribir
+consultas SQL complejas.
+
+Ventajas
+
+1).Abstracción de la base de datos: Entity Framework permite a los desarrolladores
+trabajar con objetos y entidades en lugar de tablas y columnas, lo que facilita
+la comprensión y la manipulación de los datos.
+
+2).Productividad: Entity Framework simplifica el proceso de acceso a la base de 
+datos y permite a los desarrolladores escribir código en términos de objetos 
+y entidades, lo que aumenta la productividad y reduce el tiempo de desarrollo.
+
+3).Consistencia de datos: Entity Framework garantiza la consistencia de los datos 
+mediante la validación automática de las operaciones de base de datos y la integración 
+con las transacciones de base de datos.
+
+4).Flexibilidad: Entity Framework es compatible con una amplia variedad de sistemas 
+de gestión de bases de datos, lo que significa que los desarrolladores pueden trabajar 
+con diferentes sistemas de gestión de bases de datos sin tener que realizar cambios 
+significativos en su código.
+
+5).Optimización de rendimiento: Entity Framework incluye un sistema de caché incorporado 
+que permite optimizar el rendimiento de las consultas y mejorar la eficiencia 
+de la aplicación.
+
+6).Mejora de la calidad del código: Entity Framework promueve la escritura 
+de código limpio y mantenible, lo que facilita la depuración y el mantenimiento 
+a largo plazo.
+
