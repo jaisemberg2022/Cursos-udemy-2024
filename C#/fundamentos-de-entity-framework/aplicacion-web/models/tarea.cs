@@ -8,7 +8,7 @@ public class Tarea
     [Key]
     public Guid TareaId { get; set; }
     [ForeignKey("categoriaId")]
-    public Guid CategoriaId {get;set;}
+    public Guid CategoriaId { get; set; }
     [Required]
     [MaxLength(length: 150)]
     public string titulo { get; set; }
@@ -20,11 +20,12 @@ public class Tarea
 
     public virtual Categoria Categoria { get; set; }
     public string Resumen { get; set; }
-    
+
 }
 
 
-public enum Prioridad {
+public enum Prioridad
+{
     Baja,
     Media,
     Alta

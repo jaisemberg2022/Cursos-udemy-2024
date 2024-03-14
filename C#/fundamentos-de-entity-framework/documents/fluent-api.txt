@@ -1,0 +1,18 @@
+Fluent API
+
+La Fluent API es una forma de configurar y personalizar el comportamiento de Entity Framework 
+mediante código en lugar de mediante atributos o archivos de configuración.
+
+La Fluent API proporciona una interfaz fluida y legible para la definición de las relaciones, las 
+restricciones y las propiedades de las entidades en un modelo de datos.
+
+En lugar de usar atributos para especificar la configuración en las clases de entidades, la Fluent API 
+permite a los desarrolladores escribir código para especificar la configuración de forma programática. 
+Esto puede ser útil en casos en los que los atributos no son adecuados para la tarea específica, como 
+cuando se desea especificar restricciones complejas en las relaciones entre entidades.
+
+Además, la Fluent API ofrece una mayor flexibilidad y control sobre la configuración de Entity Framework 
+que los atributos o los archivos de configuración. Esto significa que los desarrolladores pueden 
+adaptar el comportamiento de Entity Framework de manera más precisa y detallada a sus requisitos 
+específicos.
+
