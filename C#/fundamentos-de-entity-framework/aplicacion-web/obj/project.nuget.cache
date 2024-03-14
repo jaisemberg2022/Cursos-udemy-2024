@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XupE983ttPVgEn3K6NOEMtdp8gCJ3Aga1BnzJONhbZ76ozwGYNFSprMC3q6oc/yID8JiiW1zoXD3cnZ4uD/5tg==",
+  "dgSpecHash": "/0FqiF2a4OrY23pGaK7ywHZwAEPHIoM+/s3sagqNFg9ypw8yzoDd5Z7OA+bVlvIjlGAARHD47tB3EFIXsFA/OA==",
   "success": true,
-  "projectFilePath": "c:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj",
+  "projectFilePath": "C:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaider.toro\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jaider.toro\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

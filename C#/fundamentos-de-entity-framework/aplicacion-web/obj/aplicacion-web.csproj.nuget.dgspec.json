@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj": {}
+    "C:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj": {}
   },
   "projects": {
-    "c:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj": {
+    "C:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj",
+        "projectUniqueName": "C:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj",
         "projectName": "aplicacion-web",
-        "projectPath": "c:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj",
+        "projectPath": "C:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\aplicacion-web.csproj",
         "packagesPath": "C:\\Users\\jaider.toro\\.nuget\\packages\\",
-        "outputPath": "c:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\obj\\",
+        "outputPath": "C:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jaider.toro\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,7 +20,9 @@
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://fuji.sincoerp.com/SincoERP/_packaging/ERP4.0/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
