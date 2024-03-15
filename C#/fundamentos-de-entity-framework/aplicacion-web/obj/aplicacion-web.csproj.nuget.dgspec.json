@@ -14,15 +14,14 @@
         "outputPath": "C:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "C:\\Cursos udemy 2024\\C#\\fundamentos-de-entity-framework\\aplicacion-web\\NuGet.Config",
           "C:\\Users\\jaider.toro\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://fuji.sincoerp.com/SincoERP/_packaging/ERP4.0/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -42,15 +41,21 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.28, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.28, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.28, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.28, )"
             }
           },
           "imports": [

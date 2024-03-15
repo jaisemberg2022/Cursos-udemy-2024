@@ -6,7 +6,6 @@ class TareasContext : DbContext
 {
     public DbSet<Categoria> categorias { get; set; }
     public DbSet<Tarea> tareas { get; set; }
-
     public TareasContext(DbContextOptions<TareasContext> options) : base(options) { }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -16,6 +15,7 @@ class TareasContext : DbContext
             categoria.HasKey(p => p.categoriaId);
             categoria.Property(p => p.nombre).IsRequired().HasMaxLength(150);
             categoria.Property(p => p.descripcion);
+            categoria.Property(p=>p.peso);
         });
 
         modelBuilder.Entity<Tarea>(tarea =>
@@ -28,9 +28,8 @@ class TareasContext : DbContext
             tarea.Property(t=>t.PrioridadTarea);
             tarea.Property(t=>t.FechaCreacion);
             tarea.Ignore(p=> p.Resumen);
-
-
         });
+
     }
 
 }
