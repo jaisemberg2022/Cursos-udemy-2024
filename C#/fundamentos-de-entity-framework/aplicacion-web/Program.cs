@@ -9,9 +9,17 @@ builder.Services.AddSqlServer<TareasContext>(builder.Configuration.GetConnection
 var app = builder.Build();
 
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "Hello World!"); 
+
 app.MapGet(pattern: "/dbconexion",async ([FromServices] TareasContext dbContext) =>{
     dbContext.Database.EnsureCreated();
     return Results.Ok("base de datos en memoria: " + dbContext.Database.IsInMemory());
 });
+
+app.MapGet("/api/tareas",async ([FromServices] TareasContext dbContext)=>{
+    return Results.Ok(dbContext.tareas
+    .Include(p => p.Categoria)
+    .Where(p => p.PrioridadTarea == proyectoef.Models.Prioridad.Baja));
+});
+
 app.Run();
