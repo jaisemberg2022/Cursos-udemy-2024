@@ -1,0 +1,9 @@
+--CONTAINS
+    verifica si existe o no un elemento en especifico en una coleccion dependiendo de su valor
+
+    EJEMPLO 1
+    retorna los elementos cuyo valor en la propiedad categoria se igual a la palabra "Phyton"
+
+        public IEnumerable<Book> LibrosDePython(){
+            return librosCollection.Where(p => p.Categories.Contains("Python"));
+        }

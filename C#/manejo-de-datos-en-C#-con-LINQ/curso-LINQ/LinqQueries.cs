@@ -22,7 +22,6 @@ namespace curso_LINQ
         {
             return librosCollection ;
         }
-
         public IEnumerable<Book> LibrosDespuesDel200()
         {
             //extencion metohd
@@ -31,7 +30,6 @@ namespace curso_LINQ
             //query exprecion
             return from l in librosCollection where l.publishedDate.Year > 2000 select l;
         }
-
         public IEnumerable<Book> LibrosConMasDe250PaginasInAction()
         {
             //extencion metodh
@@ -49,11 +47,9 @@ namespace curso_LINQ
         public IEnumerable<Book> LibrosDePython(){
             return librosCollection.Where(p => p.Categories.Contains("Python"));
         }
-
         public IEnumerable<Book> LibrosDeJavaPorNombreAscendente(){
             return librosCollection.Where(p => p.Categories.Contains("Java")).OrderBy(p=> p.Title);
         }
-
         public IEnumerable<Book> LibrosDeMasDe450PaginasOrdenadosDescendentemente(){
             return librosCollection.Where(p=>p.PageCount > 450).OrderByDescending(p=>p.PageCount);
         }
@@ -63,43 +59,34 @@ namespace curso_LINQ
             .OrderByDescending(p => p.publishedDate)
             .TakeLast(3);
         } 
-
         public IEnumerable<Book> TercerYCuartoLibroDeMasDe400Paginas(){
             return librosCollection
             .Where(p => p.PageCount > 400)
             .Take(4)
             .Skip(2);
         }
-
         public IEnumerable<Book> TresPrimerosLibrosDeLaColeccion(){
             return librosCollection.Take(3)
             .Select(p => new Book() {Title = p.Title, PageCount = p.PageCount});
         }
-
         public long CantidadDeLibrosEntre200Y500Paginas(){
             return librosCollection.LongCount(p => p.PageCount >=200 && p.PageCount <=500);
         }
-
         public DateTime FechaDePublicacionMenor(){
             return librosCollection.Min(p => p.publishedDate);
         } 
-
         public int NumeroDePaginasLibroMayor(){
             return librosCollection.Max(p => p.PageCount);
         }
-
         public Book LibroConMenorNumeroDePaginas(){
             return librosCollection.Where(p => p.PageCount > 0).MinBy(p => p.PageCount);
         }
-
         public Book LibroConFechaDePublicacionMasReciente(){
             return librosCollection.MaxBy(p => p.publishedDate); 
         }
-
         public int SumaDeTodasLasPaginasLibrosEntre0Y500(){
             return librosCollection.Where(p => p.PageCount >= 0 && p.PageCount <= 500).Sum(p => p.PageCount);
         }
-
         public string TitulosDeLibrosDespuesDel2015Concatenados(){
             return librosCollection
             .Where(p => p.publishedDate.Year > 2015)
@@ -115,23 +102,19 @@ namespace curso_LINQ
                 return TitulosLibros;
             });
         }
-        
         public double PromedioCaracteresTitulo(){
             return librosCollection.Average(p=>p.Title.Length);
         }
-
         public IEnumerable<IGrouping<int,Book>> LibrosDespuesDel2000AgrupadosPorFecha(){
             return librosCollection.Where(p => p.publishedDate.Year >= 2000).GroupBy(p => p.publishedDate.Year);
         }
         public ILookup<char,Book> DiccionarioDeLibrosPorLetra(){
             return librosCollection.ToLookup(p => p.Title[0], p=> p);
         }
-
         public IEnumerable<Book> LibrosDespuesDel2005ConMasDe500Paginas(){
             var librosDespuesDel2005 = librosCollection.Where(p => p.publishedDate.Year > 2005);
             var librosConMasDe400Paginas = librosCollection.Where(p => p.PageCount>500);
             return librosDespuesDel2005.Join(librosConMasDe500Paginas,p => p.Title,x => x.Title,(p,x)=> p);
         }
     }
-
 }

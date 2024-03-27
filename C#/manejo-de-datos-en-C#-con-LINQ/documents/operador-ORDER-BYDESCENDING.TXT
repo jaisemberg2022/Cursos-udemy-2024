@@ -1,0 +1,9 @@
+--ORDER-BYDESCENDING
+    ordena de manera descendente los elementos de una coleccion dependiendo del tipo de valor de una de sus propiedades
+
+    EJEMPLO 1 
+    retorna los libros que tengan mas de 450 paginas, ordenados por numero de paginas de manera descendente
+
+        public IEnumerable<Book> LibrosDeMasDe450PaginasOrdenadosDescendentemente(){
+            return librosCollection.Where(p=>p.PageCount > 450).OrderByDescending(p=>p.PageCount);
+        }

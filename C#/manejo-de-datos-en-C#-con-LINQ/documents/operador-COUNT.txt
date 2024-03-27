@@ -1,0 +1,9 @@
+--COUNT
+    soporta 64 bit's con el objetivo de realizar la cuenta de la cantidad total de elementos que existe dentro de un objeto.
+
+    EJEMPLO 1 
+    retorna el numero de libros que tengan entre 200 y 500 paginas
+
+        public int CantidadDeLibrosEntre50Y90Paginas(){
+            return librosCollection.LongCount(p => p.PageCount >=50 && p.PageCount <=90);
+        }

@@ -1,0 +1,9 @@
+--ANY
+    verifica que una o mascondiciones se cumpla en almenos uno de los elementos dentro de la coleccion.
+
+    EJEMPLO 1
+    verifica si alemnos uno de los libros fue publicado en 2005
+
+        public bool SiAlgunLibroFuePublicadoEn2005(){
+            return librosCollection.Any(p => p.publishedDate.Year == 2005);
+        } 

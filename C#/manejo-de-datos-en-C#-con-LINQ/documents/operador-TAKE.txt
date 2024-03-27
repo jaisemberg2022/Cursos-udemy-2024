@@ -1,0 +1,12 @@
+--TAKE
+    selecciona una cantidad especifica de elementos en una lista de manera que retorna los por ejemplo los 3 primeros registros.
+
+    EJEMPLO 1 
+    selecciona los primeros 3 libros con fecha de publicacion mas reciente que cuyo valor en la propiedad categoria sea "Java"
+
+        public IEnumerable<Book> TresPrimerosLibrosDeJavaOrdenadosPorFechaMasReciente(){
+            return librosCollection
+            .Where(p => p.Categories.Contains("Java"))
+            .OrderByDescending(p => p.publishedDate)
+            .TakeLast(3);
+        } 

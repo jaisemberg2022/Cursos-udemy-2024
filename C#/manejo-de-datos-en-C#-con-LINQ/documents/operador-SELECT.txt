@@ -1,0 +1,10 @@
+--SELECT 
+    permite seleccionar campos específicos de un objeto, para mejorar el rendimiento y ahorrar espacio en memoria.
+
+    EJEMPLO 1
+    selecciona el titulo y el numero de paginas de los primeros 3 libros de la coleccion 
+    
+        public IEnumerable<Book> TresPrimerosLibrosDeLaColeccion(){
+            return librosCollection.Take(3)
+            .Select(p => new Book() {Title = p.Title, PageCount = p.PageCount});
+        }

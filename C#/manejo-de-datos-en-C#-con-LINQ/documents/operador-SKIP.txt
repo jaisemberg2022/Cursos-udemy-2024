@@ -1,0 +1,12 @@
+--SKIP
+    omite cierta cantidad de registro de manera que retorne los demas elementos restantes de una coleccion
+
+    EJEMPLO 1
+    selecciona el tercer y cuarto libro de los que tengan mas de 400 paginas
+
+        public IEnumerable<Book> TercerYCuartoLibroDeMasDe400Paginas(){
+            return librosCollection
+            .Where(p => p.PageCount > 400)
+            .Take(4)
+            .Skip(2);
+        }

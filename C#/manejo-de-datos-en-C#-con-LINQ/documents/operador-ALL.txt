@@ -1,0 +1,10 @@
+--ALL 
+
+    verifica que una o mas condiciones se cumplan en todos los elementos dentro de una coleccion
+
+    EJEMPLO 1
+    verificar que todos los elementos de la coleccion tengan un valor en el campo "status"
+
+        public bool TodosLosLibrosTieneStatus(){
+            return librosCollection.All(p=> p.Status != string.Empty);
+        } 

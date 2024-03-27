@@ -1,0 +1,9 @@
+--ORDER-BY
+    ordena de manera ascendente los elementos de una coleccion dependiendo del tipo de valor de una de sus propiedades
+
+    EJEMPLO 1 
+    retorna todos los elementos cuyo valor en la propiedad de  categoria sea "Java" ordenados por nombre
+
+        public IEnumerable<Book> LibrosDeJavaPorNombreAscendente(){
+            return librosCollection.Where(p => p.Categories.Contains("Java")).OrderBy(p=> p.Title);
+        }

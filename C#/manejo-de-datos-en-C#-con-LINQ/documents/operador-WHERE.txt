@@ -1,0 +1,27 @@
+--WHERE 
+
+    recibe determinados tipos de condiciones y atrave de las misma filtrar la informacion deseada
+
+    EJEMPLO 1
+    retornar los libros que fueron publicados despues del año 2000
+
+        public IEnumerable<Book> LibrosDespuesDel200()
+        {
+            //extencion metohd
+            return librosCollection.Where(p => p.publishedDate.Year > 2000);
+
+            //query exprecion
+            return from l in librosCollection where l.publishedDate.Year > 2000 select l;
+        }
+
+    EJMPLO 2
+    retornar los ibros que tengan mas de 250 paginas y el titulo contenga las plabaras in action
+
+        public IEnumerable<Book> LibrosConMasDe250PaginasYConPalabraInAction()
+        {
+            //extencion metodh
+            //return librosCollection.Where(p => p.PageCount > 250 && p.Title.Contains("in Action"));
+
+            //query exprecion
+            return from l in librosCollection where l.PageCount> 250 && l.Title.Contains("in Action") select l;
+        }
