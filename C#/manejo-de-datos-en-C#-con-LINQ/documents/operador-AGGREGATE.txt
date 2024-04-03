@@ -1,0 +1,20 @@
+--AGGREGATE
+    reccorre todas  las celdas de una determinada columna de registros de manera personalizada por medio de condiciones y permite agregar ciertos valores al resultado final
+    EJEMPLO
+    retorna el titulo de los libros que tienen fecha de publicacion posterior a 2015
+
+       public string TitulosDeLibrosDespuesDel2015Concatenados(){
+            return librosCollection
+            .Where(p => p.publishedDate.Year > 2015)
+            .Aggregate("",(TitulosLibros,next) => {
+                if (TitulosLibros != string.Empty)
+                {
+                    TitulosLibros += " - " + next.Title;
+                }
+                else
+                {
+                    TitulosLibros += next.Title;
+                }
+                return TitulosLibros;
+            });
+        }

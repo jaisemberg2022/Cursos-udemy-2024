@@ -1,0 +1,10 @@
+--JOIN
+    permite combinar 2 colecciones de registros y retornarlas en una nueva 
+    EJEMPLO
+    obten una coleccion que tenga todos los libros con mas de 500 paginas y otra que contenga los libros publicados despues del 2005
+
+        public IEnumerable<Book> LibrosDespuesDel2005ConMasDe500Paginas(){
+            var librosDespuesDel2005 = librosCollection.Where(p => p.publishedDate.Year > 2005);
+            var librosConMasDe400Paginas = librosCollection.Where(p => p.PageCount>500);
+            return librosDespuesDel2005.Join(librosConMasDe500Paginas,p => p.Title,x => x.Title,(p,x)=> p);
+        }

@@ -1,0 +1,6 @@
+--MAX-BY
+    retorna el  valor maximo de un elemento en una lista
+
+        public Book LibroConFechaDePublicacionMasReciente(){
+            return librosCollection.MaxBy(p => p.publishedDate); 
+        }

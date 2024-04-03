@@ -1,0 +1,9 @@
+--MIN
+    Se usa para obtener el menor elemento de una colección, de acuerdo a una propiedad especificada.
+
+    EJEMPLO 1 
+    retornar la menor fecha de publicacion  de la lista de libros
+
+        public DateTime FechaDePublicacionMenor(){
+            return librosCollection.Min(p => p.publishedDate);
+        } 

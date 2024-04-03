@@ -1,0 +1,8 @@
+--LOOKUP
+    permite agrupar diferentes propiedades de 2 tablas que poseen los mismos valores y los retorna en forma de diccionario
+    EJEMPLO
+    retorna un diccionario que permita consultar los libros de acuerdo a la letra con la que inicia el titulo
+        
+        public ILookup<char,Book> DiccionarioDeLibrosPorLetra(){
+            return librosCollection.ToLookup(p => p.Title[0], p=> p);
+        }

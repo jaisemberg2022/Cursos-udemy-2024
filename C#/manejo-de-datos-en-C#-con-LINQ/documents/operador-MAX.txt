@@ -1,0 +1,9 @@
+--MAX
+    Se usa para obtener el mayor elemento de una colección, de acuerdo a una propiedad especificada.
+
+    EJEMPLO 1 
+    retorna la cantidad de paginas del libro con mayor numero de paginas en la coleccion.
+
+        public int NumeroDePaginasLibroMayor(){
+            return librosCollection.Max(p => p.PageCount);
+        } 

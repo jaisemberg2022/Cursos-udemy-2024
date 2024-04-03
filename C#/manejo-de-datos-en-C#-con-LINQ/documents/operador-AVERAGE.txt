@@ -1,0 +1,8 @@
+--AVERAGE
+    permite calcular un promedio de acuerdo a los valores numericos de cierta propiedad 
+    EJEMPLO
+    retorna el promedio de caracteres(letras,espacios,simbolos) que tienen los titulos de la coleccion
+
+        public double PromedioCaracteresTitulo(){
+            return librosCollection.Average(p=>p.Title.Length);
+        } 

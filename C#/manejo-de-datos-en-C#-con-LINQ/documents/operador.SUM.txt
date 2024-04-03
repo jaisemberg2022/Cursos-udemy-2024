@@ -1,0 +1,8 @@
+--SUM
+    suma todos los valores de las celdas de una determinada columna de registros
+    EJEMPLO 
+    retorna la suma de la cantidad de paginas, de todos los libros que tengan entre 0 y 500.
+
+        public int SumaDeTodasLasPaginasLibrosEntre0Y500(){
+            return librosCollection.Where(p => p.PageCount >= 0 && p.PageCount <= 500).Sum(p => p.PageCount);
+        } 

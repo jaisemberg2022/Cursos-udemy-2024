@@ -1,0 +1,9 @@
+--MIN-BY
+    retorna el  valor minimo de un elemento en una lista
+
+   EJEMPLO
+    retorna el libro que tenga la menor cantidad de paginas mayor a 0 
+
+            public Book LibroConMenorNumeroDePaginas(){
+            return librosCollection.Where(p => p.PageCount > 0).MinBy(p => p.PageCount);
+        }

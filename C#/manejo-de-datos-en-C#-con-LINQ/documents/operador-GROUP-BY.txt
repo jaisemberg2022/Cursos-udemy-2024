@@ -1,0 +1,8 @@
+--GROUP-BY  
+    permite agrupar diferentes propiedades de 2 tablas que poseen los mismos valores
+    EJEMPLO
+    retorna todos los libros que fueron publicados a partir del 2000 agrupados por año
+
+        public IEnumerable<IGrouping<int,Book>> LibrosDespuesDel2000AgrupadosPorFecha(){
+            return librosCollection.Where(p => p.publishedDate.Year >= 2000).GroupBy(p => p.publishedDate.Year);
+        }
